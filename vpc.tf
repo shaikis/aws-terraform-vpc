@@ -3,6 +3,7 @@ provider "aws"{
 
 }
 
+# make sure we have s3 bucket. if not create one for statefile with versioning option.
 terraform {
   backend "s3" {
     bucket = "myvpc"
