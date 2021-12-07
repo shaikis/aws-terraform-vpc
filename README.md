@@ -17,3 +17,14 @@ module "vpc" {
     vpc_contact_tag           = "shaik.urs@gmail.com"
     
 }
+```
+
+```
+Output Variables from the module: 
+
+module.vpc.vpc_id
+module.vpc.private_subnet_id
+module.vpc.pub_subnet_id
+module.vpc.private_cidr
+
+```
