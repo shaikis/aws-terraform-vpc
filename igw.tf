@@ -1,5 +1,5 @@
 resource "aws_internet_gateway" "eht_igw" {
-    vpc_id = aws_vpc.eht.id
+    vpc_id = aws_vpc.main.id
 
   tags = {
     Name        = "${var.vpc_name} Internet Gateway"

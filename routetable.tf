@@ -1,5 +1,5 @@
 resource "aws_route_table" "eht_pub_route_table" {
-    vpc_id = aws_vpc.eht.id
+    vpc_id = aws_vpc.main.id
     
     route{
       cidr_block = "0.0.0.0/0"      
@@ -21,7 +21,7 @@ resource "aws_route_table_association" "pub_route_table_association" {
 }
 
 resource "aws_route_table" "eht_private_route_table" {
-    vpc_id = aws_vpc.eht.id
+    vpc_id = aws_vpc.main.id
     
     route{
       cidr_block = "0.0.0.0/0"      
